@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".weatherMain"
+    tools:showIn="@layout/app_bar_weather_main">
+
+    <TextView
+        android:id="@+id/locationbox"
+        android:layout_width="94dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <TextView
+                    android:id= "@+id/SummaryT"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Summary"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                android:id= "@+id/Summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/sunrT"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:textStyle="bold"
+                    android:text="Sunrise Time"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/ssetT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Sunset Time"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/windspeedT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Wind Direction"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/windspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/winddirectionT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Wind Direction"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/winddirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/tempLT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Lowest Temperature"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/tempL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/tempHT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Highest Temperature"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/tempH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/LatitT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Latitude"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/latit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/longiT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="Longitude"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id= "@+id/longiw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
